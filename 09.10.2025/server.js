@@ -62,19 +62,19 @@ http.createServer(async (req, res) => {
         }
     }
     else {
-        const dirpath = path.join(__dirname, "/assets");
-        console.log(dirpath);
-        const directory = await fs.opendir(dirpath);
-        try {
-            
-            do{
-                var file = await directory.read();
-                console.log(file);
-            }while ((!(file === null)));
+        let assets = "assets\\"+path;
+        try
+        {
+            console.log(mime.lookup(assets));
+            res.writeHead(200, { 'Content-Type': mime.lookup(assets) });
+            const file = await readFile(assets, 'utf-8');
+            res.end(file.toString());
         }
-        catch(error){
-            console.log(error)
+        catch
+        {
+            res.end(JSON.stringify({ error : 404 }));
         }
+        res.end;
         
     }
 }).listen(8080);
