@@ -1,0 +1,9 @@
+body {background-color: #7C8BA5;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+display: flex;
+flex-direction: column;
+margin: 0;}
+
+header {background-color:lightgray;
+color: #699EFA;
+text-align: center;}
