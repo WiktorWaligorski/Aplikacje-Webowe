@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="exitButton">
+        <item name="android:background">@color/red</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:text">Exit</item>
+        <item name="android:color">@color/black</item>
+    </style>
+
+    <style name="Header">
+        <item name="android:background">@color/light_green</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:text">Header</item>
+        <item name="android:color">@color/black</item>
+    </style>
+
+    <style name="switchButtom">
+        <item name="android:background">@color/blue</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:text">Przełącz</item>
+        <item name="android:color">@color/black</item>
+    </style>
+</resources>
