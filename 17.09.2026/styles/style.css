@@ -1,0 +1,24 @@
+* {offset: 0;
+margin: 0;}
+
+nav {display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+background-color: #bdd0f6;
+height: 70px;
+width: 100%;}
+
+div {
+    align-self: center;
+    align-content: center;
+    background-color: #3b77f1;
+    height: 50px;
+    width: 150px;
+    border-radius: 1px;
+    text-decoration: none;
+      }
+
+
+
+

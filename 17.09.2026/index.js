@@ -31,6 +31,15 @@ const server = http.createServer(async (req, res) => {
             res.write(await readFile("html/contact.html"));
             res.end();
             break;
+        case "/styles/style.css":
+            res.setHeader("Content-Type", "text/css");
+            res.write(await readFile("styles/style.css"));
+            res.statusCode = 200;
+            res.end();
+            break;
+        default:
+            res.statusCode = 404;
+            res.end("not found")
     }
 })
 server.listen(port, () => {
