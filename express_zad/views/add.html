@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dodaj książkę – Biblioteka online</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <img src="/logo.png" alt="Logo biblioteki">
+    <h1>Biblioteka online</h1>
+    <nav>
+      <a href="/">Książki</a>
+      <a href="/add">Dodaj książkę</a>
+      <a href="/about">O aplikacji</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Dodaj nową książkę</h2>
+
+    <form action="/books" method="POST">
+      <label>Tytuł
+        <input type="text" name="title" required>
+      </label>
+      <label>Autor
+        <input type="text" name="author" required>
+      </label>
+      <label>Rok wydania
+        <input type="number" name="year" min="0" max="2100" required>
+      </label>
+      <button type="submit">Dodaj książkę</button>
+    </form>
+  </main>
+</body>
+</html>

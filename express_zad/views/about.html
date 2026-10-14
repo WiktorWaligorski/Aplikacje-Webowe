@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O aplikacji – Biblioteka online</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <img src="/logo.png" alt="Logo biblioteki">
+    <h1>Biblioteka online</h1>
+    <nav>
+      <a href="/">Książki</a>
+      <a href="/add">Dodaj książkę</a>
+      <a href="/about">O aplikacji</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>O aplikacji</h2>
+    <p>Biblioteka online to prosta aplikacja serwerowa napisana w Node.js z użyciem Express.js.
+       Pozwala przeglądać, wyszukiwać i dodawać książki.</p>
+    <ul>
+      <li>Wersja: 1.0.0</li>
+      <li>Port: 4000</li>
+      <li>Dane: plik <code>data/books.json</code></li>
+      <li>Bez silników szablonów – widoki to zwykłe pliki HTML</li>
+    </ul>
+    <h3>Dostępne ścieżki</h3>
+    <ul>
+      <li><code>GET /</code> – strona główna</li>
+      <li><code>GET /about</code> – informacje o aplikacji</li>
+      <li><code>GET /books</code> – wszystkie książki (JSON)</li>
+      <li><code>GET /books/:id</code> – książka po ID (JSON)</li>
+      <li><code>GET /books/search?title=...</code> – wyszukiwanie po tytule</li>
+      <li><code>GET /add</code> – formularz dodawania</li>
+      <li><code>POST /books</code> – dodanie książki</li>
+    </ul>
+  </main>
+</body>
+</html>
